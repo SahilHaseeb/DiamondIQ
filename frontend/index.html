@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DiamondIQ | Diamond Price Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        <span class="logo-diamond">◇</span>
+        Diamond<span class="logo-highlight">IQ</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#prediction">Predict</a>
+        <a href="#history">History</a>
+        <a href="#performance">Analytics</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <a href="#prediction" class="nav-button">
+        Get Started →
+    </a>
+
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            ✦ AI-POWERED DIAMOND VALUATION
+        </div>
+
+        <h1>
+            Discover the True
+            <span>Value of Your Diamond</span>
+        </h1>
+
+        <p>
+            Experience intelligent diamond price prediction
+            powered by Machine Learning. Get an estimated
+            diamond value using its unique characteristics.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#prediction" class="primary-btn">
+                Explore Prediction →
+            </a>
+
+            <a href="#performance" class="secondary-btn">
+                ▥ View Analytics
+            </a>
+
+        </div>
+
+        <div class="hero-info">
+
+            <div class="stat-item">
+                <span class="stat-icon">◇</span>
+                <strong>53,772</strong>
+                <small>Cleaned Records</small>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <span class="stat-icon">▥</span>
+                <strong>98.14%</strong>
+                <small>Testing R² Score</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="diamond-glow"></div>
+
+        <img
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200"
+            alt="Brilliant diamond"
+        >
+
+        <div class="floating-card">
+
+            <span class="floating-icon">✦</span>
+
+            <div>
+                <strong>AI-Powered Valuation</strong>
+                <small>Smart Machine Learning Price Estimation</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PREDICTION SECTION -->
+<section class="prediction-section" id="prediction">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>DIAMOND VALUATION</span>
+
+            <h2>Predict Your Diamond Price</h2>
+
+            <p>
+                Provide your diamond's details to estimate its price.
+            </p>
+
+        </div>
+
+        <div class="prediction-card">
+
+            <form id="prediction-form">
+
+                <h3>Diamond Specifications</h3>
+
+                <p class="form-description">
+                    Enter the physical and quality characteristics
+                    of your diamond.
+                </p>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="carat">Carat Weight</label>
+                        <input type="number" id="carat" name="carat"
+                            placeholder="e.g. 1.00" min="0.2" max="5"
+                            step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cut">Cut Quality</label>
+                        <select id="cut" name="cut" required>
+                            <option value="">Select Cut</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Good">Good</option>
+                            <option value="Very Good">Very Good</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Ideal">Ideal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="color">Diamond Color</label>
+                        <select id="color" name="color" required>
+                            <option value="">Select Color</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="J">J</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clarity">Diamond Clarity</label>
+                        <select id="clarity" name="clarity" required>
+                            <option value="">Select Clarity</option>
+                            <option value="I1">I1</option>
+                            <option value="SI2">SI2</option>
+                            <option value="SI1">SI1</option>
+                            <option value="VS2">VS2</option>
+                            <option value="VS1">VS1</option>
+                            <option value="VVS2">VVS2</option>
+                            <option value="VVS1">VVS1</option>
+                            <option value="IF">IF</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="depth">Depth (%)</label>
+                        <input type="number" id="depth" name="depth"
+                            placeholder="e.g. 61.5" min="40" max="80"
+                            step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="table">Table (%)</label>
+                        <input type="number" id="table" name="table"
+                            placeholder="e.g. 55" min="40" max="80"
+                            step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="x">Length (X) in mm</label>
+                        <input type="number" id="x" name="x"
+                            placeholder="e.g. 6.4" min="0.1" max="20"
+                            step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="y">Width (Y) in mm</label>
+                        <input type="number" id="y" name="y"
+                            placeholder="e.g. 6.4" min="0.1" max="20"
+                            step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="z">Height (Z) in mm</label>
+                        <input type="number" id="z" name="z"
+                            placeholder="e.g. 3.9" min="0.1" max="20"
+                            step="0.01" required>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="predict-button">
+                    Predict Diamond Price
+                </button>
+
+                <p class="form-note">
+                    Your diamond details will be analyzed
+                    by our trained Machine Learning model.
+                </p>
+
+            </form>
+
+            <div class="result-box" id="result">
+
+                <span>YOUR ESTIMATED DIAMOND VALUE</span>
+
+                <h2 id="predicted-price">$0.00</h2>
+
+                <p id="result-message">
+                    Your predicted price will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PREDICTION HISTORY ================= -->
+
+<section class="history-section" id="history">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>PREDICTION RECORDS</span>
+
+            <h2>Your Prediction History</h2>
+
+            <p>
+                View your previous diamond price predictions.
+            </p>
+
+        </div>
+
+        <!-- History Statistics -->
+        <div class="history-stats">
+
+            <div class="history-stat-card">
+                <h3 id="total-predictions">0</h3>
+                <p>Total Predictions</p>
+            </div>
+
+            <div class="history-stat-card">
+                <h3 id="average-price">$0.00</h3>
+                <p>Average Predicted Price</p>
+            </div>
+
+        </div>
+
+        <!-- History Table -->
+        <div class="history-table-container">
+
+            <table class="history-table">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Carat</th>
+                        <th>Cut</th>
+                        <th>Color</th>
+                        <th>Clarity</th>
+                        <th>Predicted Price</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody id="history-table-body">
+
+                    <tr>
+                        <td colspan="7">
+                            Loading prediction history...
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p id="history-message" class="history-message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>ABOUT THE PROJECT</span>
+
+            <h2>Intelligence Behind Every Prediction</h2>
+
+            <p>
+                DiamondIQ uses Machine Learning to analyze
+                diamond characteristics and estimate their prices.
+            </p>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+                <h3>Data Analysis</h3>
+                <p>
+                    Diamond dataset cleaning, exploration,
+                    statistical analysis and visualization.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Machine Learning</h3>
+                <p>
+                    Multiple regression algorithms were trained
+                    and evaluated to select the best model.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Price Prediction</h3>
+                <p>
+                    A trained Random Forest model estimates
+                    diamond prices using their characteristics.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MODEL PERFORMANCE -->
+<section class="performance-section" id="performance">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>MODEL PERFORMANCE</span>
+
+            <h2>Our Machine Learning Results</h2>
+
+            <p>
+                Performance of our selected Random Forest model.
+            </p>
+
+        </div>
+
+        <div class="performance-grid">
+
+            <div class="performance-card">
+                <h3>98.14%</h3>
+                <p>Testing R² Score</p>
+            </div>
+
+            <div class="performance-card">
+                <h3>268.79</h3>
+                <p>Mean Absolute Error</p>
+            </div>
+
+            <div class="performance-card">
+                <h3>537.04</h3>
+                <p>Root Mean Squared Error</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <h2>Diamond<span>IQ</span></h2>
+
+        <p>
+            AI-Powered Diamond Price Prediction Project.
+        </p>
+
+        <p class="copyright">
+            © 2026 DiamondIQ. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
