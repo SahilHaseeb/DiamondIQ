@@ -198,7 +198,9 @@ print("RANDOM FOREST MODEL TRAINING")
 
 # Create model
 random_forest_model = RandomForestRegressor(
-    n_estimators=100,
+    n_estimators=30,
+    max_depth=20,
+    min_samples_leaf=2,
     random_state=42,
     n_jobs=-1
 )
