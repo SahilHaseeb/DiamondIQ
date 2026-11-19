@@ -7,7 +7,7 @@ import pandas as pd
 
 from flask import Flask, request, jsonify, send_from_directory
 
-from database import initialize_database, DATABASE_PATH
+from backend.database import initialize_database, DATABASE_PATH
 
 
 # Get the main project directory
