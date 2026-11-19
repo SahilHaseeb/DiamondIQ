@@ -503,4 +503,4 @@ Possible future enhancements include:
 
 DiamondIQ demonstrates the complete process of developing a Machine Learning-based prediction system, starting from raw dataset analysis and preprocessing to model training, evaluation, web application development, and database integration.
 
-By combining Data Science, Machine Learning, and Web Development, the project provides an interactive system that estimates diamond prices based on their characteristics and maintains a history of previous predictions.
+By combining Data Science, Machine Learning, and Web Development, the project provides an interactive system that estimates diamond prices based on their characteristics and maintains a history of previous predictions."# DiamondIQ" 
